@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: master
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
@@ -33,8 +33,53 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
+  - name: "deep-dropdown-1"
+    label: "Deep Dropdown 1"
+    folder: "assets/img/deep-dropdown-1"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "deep-dropdown-2"
+    label: "Deep Dropdown 2"
+    folder: "assets/img/deep-dropdown-2"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "deep-dropdown-3"
+    label: "Deep Dropdown 3"
+    folder: "assets/img/deep-dropdown-3"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "deep-dropdown-4"
+    label: "Deep Dropdown 4"
+    folder: "assets/img/deep-dropdown-4"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "deep-dropdown-5"
+    label: "Deep Dropdown 5"
+    folder: "assets/img/deep-dropdown-5"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
   - name: "gallery"
-    label: "Main Gallery"
+    label: "Gallery"
     folder: "assets/img/gallery"
     create: true
     slug: "{{slug}}"
