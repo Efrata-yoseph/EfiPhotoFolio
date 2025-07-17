@@ -2,123 +2,120 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "assets/img"
-public_folder: "/assets/img"
-
 collections:
   - name: "animals"
     label: "Animals"
     folder: "assets/img/animals"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/animals"
+    public_folder: "/assets/img/animals"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "architecture"
     label: "Architecture"
     folder: "assets/img/architecture"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/architecture"
+    public_folder: "/assets/img/architecture"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "deep-dropdown"
     label: "Deep Dropdown"
     folder: "assets/img/deep-dropdown"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/deep-dropdown"
+    public_folder: "/assets/img/deep-dropdown"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "deep-dropdown-1"
     label: "Deep Dropdown 1"
     folder: "assets/img/deep-dropdown-1"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/deep-dropdown-1"
+    public_folder: "/assets/img/deep-dropdown-1"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "deep-dropdown-2"
     label: "Deep Dropdown 2"
     folder: "assets/img/deep-dropdown-2"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/deep-dropdown-2"
+    public_folder: "/assets/img/deep-dropdown-2"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "deep-dropdown-3"
     label: "Deep Dropdown 3"
     folder: "assets/img/deep-dropdown-3"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/deep-dropdown-3"
+    public_folder: "/assets/img/deep-dropdown-3"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "deep-dropdown-4"
     label: "Deep Dropdown 4"
     folder: "assets/img/deep-dropdown-4"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/deep-dropdown-4"
+    public_folder: "/assets/img/deep-dropdown-4"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "deep-dropdown-5"
     label: "Deep Dropdown 5"
     folder: "assets/img/deep-dropdown-5"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/deep-dropdown-5"
+    public_folder: "/assets/img/deep-dropdown-5"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "gallery"
     label: "Gallery"
     folder: "assets/img/gallery"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/gallery"
+    public_folder: "/assets/img/gallery"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "nature"
     label: "Nature"
     folder: "assets/img/nature"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/nature"
+    public_folder: "/assets/img/nature"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "people"
     label: "People"
     folder: "assets/img/people"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/people"
+    public_folder: "/assets/img/people"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "sports"
     label: "Sports"
     folder: "assets/img/sports"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/sports"
+    public_folder: "/assets/img/sports"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
   - name: "travel"
     label: "Travel"
     folder: "assets/img/travel"
     create: true
-    slug: "{{slug}}"
+    media_folder: "assets/img/travel"
+    public_folder: "/assets/img/travel"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }

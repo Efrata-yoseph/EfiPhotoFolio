@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>You’ve been invited</title>
+  </head>
+  <body>
+    <h2>Welcome to Efrata Yoseph’s Portfolio CMS</h2>
+    <p>You’ve been invited to manage the content of this website.</p>
+    <p>
+      Click the button below to set your password and get started:
+    </p>
+    <p>
+      <a href="{{ .SiteURL }}/admin/#invite_token={{ .Token }}" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none;">
+        Accept Invitation
+      </a>
+    </p>
+    <p>If the button doesn't work, copy and paste this link into your browser:</p>
+    <p>{{ .SiteURL }}/admin/#invite_token={{ .Token }}</p>
+  </body>
+</html>
