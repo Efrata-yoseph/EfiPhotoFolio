@@ -2,6 +2,13 @@ backend:
   name: git-gateway
   branch: master
 
+media_folder: "assets/img"
+public_folder: "/assets/img"
+media_library:
+  name: "uploadcare"
+  config:
+    publicKey: "YOUR_PUBLIC_KEY"
+
 collections:
   - name: "animals"
     label: "Animals"
