@@ -2,6 +2,13 @@ backend:
   name: git-gateway
   branch: master
 
+media_folder: "assets/img"
+public_folder: "/assets/img"
+media_library:
+  name: uploadcare
+  config:
+    publicKey: "YOUR_PUBLIC_KEY"
+
 collections:
   - name: "animals"
     label: "Animals"
@@ -9,6 +16,7 @@ collections:
     create: true
     media_folder: "assets/img/animals"
     public_folder: "/assets/img/animals"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -18,6 +26,7 @@ collections:
     create: true
     media_folder: "assets/img/architecture"
     public_folder: "/assets/img/architecture"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -27,6 +36,7 @@ collections:
     create: true
     media_folder: "assets/img/deep-dropdown"
     public_folder: "/assets/img/deep-dropdown"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -36,6 +46,7 @@ collections:
     create: true
     media_folder: "assets/img/deep-dropdown-1"
     public_folder: "/assets/img/deep-dropdown-1"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -45,6 +56,7 @@ collections:
     create: true
     media_folder: "assets/img/deep-dropdown-2"
     public_folder: "/assets/img/deep-dropdown-2"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -54,6 +66,7 @@ collections:
     create: true
     media_folder: "assets/img/deep-dropdown-3"
     public_folder: "/assets/img/deep-dropdown-3"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -63,6 +76,7 @@ collections:
     create: true
     media_folder: "assets/img/deep-dropdown-4"
     public_folder: "/assets/img/deep-dropdown-4"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -72,6 +86,7 @@ collections:
     create: true
     media_folder: "assets/img/deep-dropdown-5"
     public_folder: "/assets/img/deep-dropdown-5"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -81,6 +96,7 @@ collections:
     create: true
     media_folder: "assets/img/gallery"
     public_folder: "/assets/img/gallery"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -90,6 +106,7 @@ collections:
     create: true
     media_folder: "assets/img/nature"
     public_folder: "/assets/img/nature"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -99,6 +116,7 @@ collections:
     create: true
     media_folder: "assets/img/people"
     public_folder: "/assets/img/people"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -108,6 +126,7 @@ collections:
     create: true
     media_folder: "assets/img/sports"
     public_folder: "/assets/img/sports"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
 
@@ -117,5 +136,6 @@ collections:
     create: true
     media_folder: "assets/img/travel"
     public_folder: "/assets/img/travel"
+    path: "{{slug}}"
     fields:
       - { label: "Image", name: "image", widget: "image" }
