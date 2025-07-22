@@ -4,10 +4,6 @@ backend:
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
-media_library:
-  name: "uploadcare"
-  config:
-    publicKey: "aae61f61089d31df4d7b"
 
 collections:
   - name: "animals"
