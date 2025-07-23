@@ -2,142 +2,150 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
+media_folder: "assets/img"      # Path where uploaded files go in the repo
+public_folder: "/assets/img"    # Path to access the images in your site
 
 collections:
-  - name: "uploads"
-    label: "Image Uploads"
-    delete: false
-    editor:
-      preview: false
+  - name: "travel"
+    label: "Travel"
     files:
-      - label: "Animals"
-        name: "animals"
-        file: "assets/images/animals/placeholder.md"
-        media_folder: "assets/images/animals"
-        public_folder: "/assets/images/animals"
+      - file: "assets/img/Travel/placeholder.md"
+        label: "Upload Travel Images"
+        name: "travel_images"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "Architecture"
-        name: "architecture"
-        file: "assets/images/architecture/placeholder.md"
-        media_folder: "assets/images/architecture"
-        public_folder: "/assets/images/architecture"
+  - name: "animals"
+    label: "Animals"
+    files:
+      - file: "assets/img/animals/placeholder.md"
+        label: "Upload Animal Images"
+        name: "animals_images"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "Deep Dropdown"
-        name: "deep_dropdown"
-        file: "assets/images/deep-dropdown/placeholder.md"
-        media_folder: "assets/images/deep-dropdown"
-        public_folder: "/assets/images/deep-dropdown"
+  - name: "architecture"
+    label: "Architecture"
+    files:
+      - file: "assets/img/architecture/placeholder.md"
+        label: "Upload Architecture Images"
+        name: "architecture_images"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "Deep Dropdown 1"
+  - name: "deep1"
+    label: "Deep Dropdown 1"
+    files:
+      - file: "assets/img/deep-dropdown-1/placeholder.md"
+        label: "Upload to Deep Dropdown 1"
         name: "deep_dropdown_1"
-        file: "assets/images/deep-dropdown-1/placeholder.md"
-        media_folder: "assets/images/deep-dropdown-1"
-        public_folder: "/assets/images/deep-dropdown-1"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "Deep Dropdown 2"
+  - name: "deep2"
+    label: "Deep Dropdown 2"
+    files:
+      - file: "assets/img/deep-dropdown-2/placeholder.md"
+        label: "Upload to Deep Dropdown 2"
         name: "deep_dropdown_2"
-        file: "assets/images/deep-dropdown-2/placeholder.md"
-        media_folder: "assets/images/deep-dropdown-2"
-        public_folder: "/assets/images/deep-dropdown-2"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "Deep Dropdown 3"
+  - name: "deep3"
+    label: "Deep Dropdown 3"
+    files:
+      - file: "assets/img/deep-dropdown-3/placeholder.md"
+        label: "Upload to Deep Dropdown 3"
         name: "deep_dropdown_3"
-        file: "assets/images/deep-dropdown-3/placeholder.md"
-        media_folder: "assets/images/deep-dropdown-3"
-        public_folder: "/assets/images/deep-dropdown-3"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "Deep Dropdown 4"
+  - name: "deep4"
+    label: "Deep Dropdown 4"
+    files:
+      - file: "assets/img/deep-dropdown-4/placeholder.md"
+        label: "Upload to Deep Dropdown 4"
         name: "deep_dropdown_4"
-        file: "assets/images/deep-dropdown-4/placeholder.md"
-        media_folder: "assets/images/deep-dropdown-4"
-        public_folder: "/assets/images/deep-dropdown-4"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "Deep Dropdown 5"
+  - name: "deep5"
+    label: "Deep Dropdown 5"
+    files:
+      - file: "assets/img/deep-dropdown-5/placeholder.md"
+        label: "Upload to Deep Dropdown 5"
         name: "deep_dropdown_5"
-        file: "assets/images/deep-dropdown-5/placeholder.md"
-        media_folder: "assets/images/deep-dropdown-5"
-        public_folder: "/assets/images/deep-dropdown-5"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "Gallery"
-        name: "gallery"
-        file: "assets/images/gallery/placeholder.md"
-        media_folder: "assets/images/gallery"
-        public_folder: "/assets/images/gallery"
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - file: "assets/img/gallery/placeholder.md"
+        label: "Upload to Gallery"
+        name: "gallery_images"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "Nature"
-        name: "nature"
-        file: "assets/images/nature/placeholder.md"
-        media_folder: "assets/images/nature"
-        public_folder: "/assets/images/nature"
+  - name: "nature"
+    label: "Nature"
+    files:
+      - file: "assets/img/nature/placeholder.md"
+        label: "Upload to Nature"
+        name: "nature_images"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "People"
-        name: "people"
-        file: "assets/images/people/placeholder.md"
-        media_folder: "assets/images/people"
-        public_folder: "/assets/images/people"
+  - name: "people"
+    label: "People"
+    files:
+      - file: "assets/img/people/placeholder.md"
+        label: "Upload to People"
+        name: "people_images"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
+            required: true
 
-      - label: "Sports"
-        name: "sports"
-        file: "assets/images/Sports/placeholder.md"
-        media_folder: "assets/images/sports"
-        public_folder: "/assets/images/sports"
+  - name: "sports"
+    label: "Sports"
+    files:
+      - file: "assets/img/sports/placeholder.md"
+        label: "Upload to sports"
+        name: "sports_images"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
-
-      - label: "Travel"
-        name: "travel"
-        file: "assets/images/Travel/placeholder.md"
-        media_folder: "assets/images/Travel"
-        public_folder: "/assets/images/Travel"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
+            required: true
