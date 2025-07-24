@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "assets/img"      # Path where uploaded files go in the repo
-public_folder: "/assets/img"    # Path to access the images in your site
+media_folder: "assets/img"         # Global folder for uploads
+public_folder: "/assets/img"       # Public access path for images
 
 collections:
   - name: "travel"
@@ -17,6 +17,8 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/Travel"
+            public_folder: "/assets/img/Travel"
 
   - name: "animals"
     label: "Animals"
@@ -29,6 +31,8 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/animals"
+            public_folder: "/assets/img/animals"
 
   - name: "architecture"
     label: "Architecture"
@@ -41,6 +45,8 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/architecture"
+            public_folder: "/assets/img/architecture"
 
   - name: "deep1"
     label: "Deep Dropdown 1"
@@ -53,6 +59,8 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/deep-dropdown-1"
+            public_folder: "/assets/img/deep-dropdown-1"
 
   - name: "deep2"
     label: "Deep Dropdown 2"
@@ -65,6 +73,8 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/deep-dropdown-2"
+            public_folder: "/assets/img/deep-dropdown-2"
 
   - name: "deep3"
     label: "Deep Dropdown 3"
@@ -77,6 +87,8 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/deep-dropdown-3"
+            public_folder: "/assets/img/deep-dropdown-3"
 
   - name: "deep4"
     label: "Deep Dropdown 4"
@@ -89,6 +101,8 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/deep-dropdown-4"
+            public_folder: "/assets/img/deep-dropdown-4"
 
   - name: "deep5"
     label: "Deep Dropdown 5"
@@ -101,6 +115,8 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/deep-dropdown-5"
+            public_folder: "/assets/img/deep-dropdown-5"
 
   - name: "gallery"
     label: "Gallery"
@@ -113,6 +129,8 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/gallery"
+            public_folder: "/assets/img/gallery"
 
   - name: "nature"
     label: "Nature"
@@ -125,6 +143,8 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/nature"
+            public_folder: "/assets/img/nature"
 
   - name: "people"
     label: "People"
@@ -137,15 +157,19 @@ collections:
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/people"
+            public_folder: "/assets/img/people"
 
   - name: "sports"
     label: "Sports"
     files:
       - file: "assets/img/sports/placeholder.md"
-        label: "Upload to sports"
+        label: "Upload to Sports"
         name: "sports_images"
         fields:
           - label: "Image"
             name: "image"
             widget: "image"
             required: true
+            media_folder: "assets/img/sports"
+            public_folder: "/assets/img/sports"
