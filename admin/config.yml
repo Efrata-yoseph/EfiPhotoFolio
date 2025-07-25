@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "assets/img"         # Global media folder
-public_folder: "/assets/img"       # Public access path
+media_folder: "assets/img"
+public_folder: "/assets/img"
 
 collections:
   - name: "travel"
@@ -11,7 +11,7 @@ collections:
     folder: "content/travel"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/Travel"
+    media_folder: "../../assets/img/Travel"
     public_folder: "/assets/img/Travel"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -21,7 +21,7 @@ collections:
     folder: "content/animals"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/animals"
+    media_folder: "../../assets/img/animals"
     public_folder: "/assets/img/animals"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -31,7 +31,7 @@ collections:
     folder: "content/architecture"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/architecture"
+    media_folder: "../../assets/img/architecture"
     public_folder: "/assets/img/architecture"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -41,7 +41,7 @@ collections:
     folder: "content/deep-dropdown-1"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/deep-dropdown-1"
+    media_folder: "../../assets/img/deep-dropdown-1"
     public_folder: "/assets/img/deep-dropdown-1"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -51,7 +51,7 @@ collections:
     folder: "content/deep-dropdown-2"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/deep-dropdown-2"
+    media_folder: "../../assets/img/deep-dropdown-2"
     public_folder: "/assets/img/deep-dropdown-2"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -61,7 +61,7 @@ collections:
     folder: "content/deep-dropdown-3"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/deep-dropdown-3"
+    media_folder: "../../assets/img/deep-dropdown-3"
     public_folder: "/assets/img/deep-dropdown-3"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -71,7 +71,7 @@ collections:
     folder: "content/deep-dropdown-4"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/deep-dropdown-4"
+    media_folder: "../../assets/img/deep-dropdown-4"
     public_folder: "/assets/img/deep-dropdown-4"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -81,7 +81,7 @@ collections:
     folder: "content/deep-dropdown-5"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/deep-dropdown-5"
+    media_folder: "../../assets/img/deep-dropdown-5"
     public_folder: "/assets/img/deep-dropdown-5"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -91,7 +91,7 @@ collections:
     folder: "content/gallery"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/gallery"
+    media_folder: "../../assets/img/gallery"
     public_folder: "/assets/img/gallery"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -101,7 +101,7 @@ collections:
     folder: "content/nature"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/nature"
+    media_folder: "../../assets/img/nature"
     public_folder: "/assets/img/nature"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -111,7 +111,7 @@ collections:
     folder: "content/people"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/people"
+    media_folder: "../../assets/img/people"
     public_folder: "/assets/img/people"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
@@ -121,7 +121,7 @@ collections:
     folder: "content/sports"
     create: true
     slug: "{{slug}}"
-    media_folder: "/assets/img/sports"
+    media_folder: "../../assets/img/sports"
     public_folder: "/assets/img/sports"
     fields:
       - { label: "Image", name: "image", widget: "image", required: true }
