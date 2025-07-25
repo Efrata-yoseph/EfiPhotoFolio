@@ -2,174 +2,126 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "assets/img"         # Global folder for uploads
-public_folder: "/assets/img"       # Public access path for images
+media_folder: "assets/img"         # Global media folder
+public_folder: "/assets/img"       # Public access path
 
 collections:
   - name: "travel"
     label: "Travel"
-    files:
-      - file: "assets/img/Travel/placeholder.md"
-        label: "Upload Travel Images"
-        name: "travel_images"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/Travel"
-            public_folder: "/assets/img/Travel"
+    folder: "content/travel"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/Travel"
+    public_folder: "/assets/img/Travel"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "animals"
     label: "Animals"
-    files:
-      - file: "assets/img/animals/placeholder.md"
-        label: "Upload Animal Images"
-        name: "animals_images"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/animals"
-            public_folder: "/assets/img/animals"
+    folder: "content/animals"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/animals"
+    public_folder: "/assets/img/animals"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "architecture"
     label: "Architecture"
-    files:
-      - file: "assets/img/architecture/placeholder.md"
-        label: "Upload Architecture Images"
-        name: "architecture_images"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/architecture"
-            public_folder: "/assets/img/architecture"
+    folder: "content/architecture"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/architecture"
+    public_folder: "/assets/img/architecture"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "deep1"
     label: "Deep Dropdown 1"
-    files:
-      - file: "assets/img/deep-dropdown-1/placeholder.md"
-        label: "Upload to Deep Dropdown 1"
-        name: "deep_dropdown_1"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/deep-dropdown-1"
-            public_folder: "/assets/img/deep-dropdown-1"
+    folder: "content/deep-dropdown-1"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/deep-dropdown-1"
+    public_folder: "/assets/img/deep-dropdown-1"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "deep2"
     label: "Deep Dropdown 2"
-    files:
-      - file: "assets/img/deep-dropdown-2/placeholder.md"
-        label: "Upload to Deep Dropdown 2"
-        name: "deep_dropdown_2"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/deep-dropdown-2"
-            public_folder: "/assets/img/deep-dropdown-2"
+    folder: "content/deep-dropdown-2"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/deep-dropdown-2"
+    public_folder: "/assets/img/deep-dropdown-2"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "deep3"
     label: "Deep Dropdown 3"
-    files:
-      - file: "assets/img/deep-dropdown-3/placeholder.md"
-        label: "Upload to Deep Dropdown 3"
-        name: "deep_dropdown_3"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/deep-dropdown-3"
-            public_folder: "/assets/img/deep-dropdown-3"
+    folder: "content/deep-dropdown-3"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/deep-dropdown-3"
+    public_folder: "/assets/img/deep-dropdown-3"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "deep4"
     label: "Deep Dropdown 4"
-    files:
-      - file: "assets/img/deep-dropdown-4/placeholder.md"
-        label: "Upload to Deep Dropdown 4"
-        name: "deep_dropdown_4"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/deep-dropdown-4"
-            public_folder: "/assets/img/deep-dropdown-4"
+    folder: "content/deep-dropdown-4"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/deep-dropdown-4"
+    public_folder: "/assets/img/deep-dropdown-4"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "deep5"
     label: "Deep Dropdown 5"
-    files:
-      - file: "assets/img/deep-dropdown-5/placeholder.md"
-        label: "Upload to Deep Dropdown 5"
-        name: "deep_dropdown_5"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/deep-dropdown-5"
-            public_folder: "/assets/img/deep-dropdown-5"
+    folder: "content/deep-dropdown-5"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/deep-dropdown-5"
+    public_folder: "/assets/img/deep-dropdown-5"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "gallery"
     label: "Gallery"
-    files:
-      - file: "assets/img/gallery/placeholder.md"
-        label: "Upload to Gallery"
-        name: "gallery_images"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/gallery"
-            public_folder: "/assets/img/gallery"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/gallery"
+    public_folder: "/assets/img/gallery"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "nature"
     label: "Nature"
-    files:
-      - file: "assets/img/nature/placeholder.md"
-        label: "Upload to Nature"
-        name: "nature_images"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/nature"
-            public_folder: "/assets/img/nature"
+    folder: "content/nature"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/nature"
+    public_folder: "/assets/img/nature"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "people"
     label: "People"
-    files:
-      - file: "assets/img/people/placeholder.md"
-        label: "Upload to People"
-        name: "people_images"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/people"
-            public_folder: "/assets/img/people"
+    folder: "content/people"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/people"
+    public_folder: "/assets/img/people"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
 
   - name: "sports"
     label: "Sports"
-    files:
-      - file: "assets/img/sports/placeholder.md"
-        label: "Upload to Sports"
-        name: "sports_images"
-        fields:
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            required: true
-            media_folder: "assets/img/sports"
-            public_folder: "/assets/img/sports"
+    folder: "content/sports"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "/assets/img/sports"
+    public_folder: "/assets/img/sports"
+    fields:
+      - { label: "Image", name: "image", widget: "image", required: true }
