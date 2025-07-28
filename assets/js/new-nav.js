@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mobileNavToggle) {
     mobileNavToggle.addEventListener('click', function(event) {
       event.preventDefault();
-      document.querySelector('body').classList.toggle('mobile-nav-active');
-
+      document.body.classList.toggle('mobile-nav-active');
       this.classList.toggle('bi-list');
       this.classList.toggle('bi-x');
     });
@@ -20,14 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active')) {
-        document.querySelector('body').classList.remove('mobile-nav-active');
+      if (document.body.classList.contains('mobile-nav-active')) {
+        document.body.classList.remove('mobile-nav-active');
         let navbarToggle = document.querySelector('.mobile-nav-toggle');
         navbarToggle.classList.toggle('bi-list');
         navbarToggle.classList.toggle('bi-x');
       }
     });
-
   });
 
   /**
@@ -38,9 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
   navDropdowns.forEach(el => {
     el.addEventListener('click', function(event) {
       event.preventDefault();
-      this.parentElement.classList.toggle('active');
-      this.parentElement.nextElementSibling.classList.toggle('dropdown-active');
+      const parent = this.parentElement;
+      const dropdownMenu = parent.querySelector('ul');
+      if (dropdownMenu) {
+        parent.classList.toggle('active');
+        dropdownMenu.classList.toggle('dropdown-active');
+      }
     });
   });
-
 });

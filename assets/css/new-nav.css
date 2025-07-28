@@ -19,16 +19,16 @@
   color: var(--nav-color);
 }
 
-.mobile-nav-active .mobile-nav-toggle {
+body.mobile-nav-active .mobile-nav-toggle {
   color: #fff;
 }
 
-.mobile-nav-active .mobile-nav-toggle i {
+body.mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
 
-.mobile-nav-active .navmenu {
-  left: 0;
+body.mobile-nav-active .navmenu {
+  right: 0;
 }
 
 @media (max-width: 1199px) {
@@ -43,7 +43,7 @@
     bottom: 0;
     width: 300px;
     background: var(--nav-mobile-background-color);
-    transition: 0.3s;
+    transition: right 0.3s ease;
     z-index: 9998;
     padding-top: 60px;
   }
