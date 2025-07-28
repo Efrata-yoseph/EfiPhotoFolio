@@ -26,9 +26,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- New Nav CSS File -->
-  <link href="assets/css/new-nav.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -68,9 +65,8 @@
           <!-- <li><a href="services.html">Services</a></li> -->
           <!-- <li><a href="contact.html">Contact</a></li> -->
         </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 
       <div class="header-social-links">
         <a href="https://x.com/EfrataYoseph" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -201,6 +197,9 @@
   <footer id="footer" class="footer">
 
     <div class="container">
+      <div class="login-button-container">
+        <a href="#" class="login-button" onclick="netlifyIdentity.open(); return false;">Login</a>
+      </div>
       <div class="copyright text-center ">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">EfiPhotoFolio</strong> <span>All Rights Reserved</span></p>
       </div>
@@ -235,9 +234,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!-- New Nav JS File -->
-  <script src="assets/js/new-nav.js"></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
     if (window.netlifyIdentity) {
